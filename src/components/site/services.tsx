@@ -38,7 +38,7 @@ export function Services() {
                   <span className="inline-flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors duration-200 group-hover:bg-primary group-hover:text-primary-foreground">
                     <Icon className="size-5" />
                   </span>
-                  <h3 className="text-lg font-semibold">{service.title}</h3>
+                  <h3 className="text-lg font-bold">{service.title}</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {service.description}
                   </p>

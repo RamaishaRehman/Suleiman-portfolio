@@ -65,7 +65,7 @@ export function ProjectDialog({ project, onClose }: ProjectDialogProps) {
                 </span>
                 <span className="text-xs text-muted-foreground">{project.platform}</span>
               </div>
-              <DialogTitle className="text-2xl font-bold">{project.name}</DialogTitle>
+              <DialogTitle className="text-2xl font-extrabold">{project.name}</DialogTitle>
               <DialogDescription className="text-base leading-relaxed">
                 {project.description}
               </DialogDescription>

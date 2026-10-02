@@ -23,7 +23,7 @@ export function Contact() {
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Contact
             </p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold sm:text-4xl lg:text-5xl">
+            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-extrabold sm:text-4xl lg:text-5xl">
               Have a store or website in mind? Let&apos;s build it.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">

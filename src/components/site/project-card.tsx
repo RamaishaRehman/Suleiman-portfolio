@@ -79,7 +79,7 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
           </span>
           <span className="text-xs text-muted-foreground">{project.platform}</span>
         </div>
-        <h3 className={cn("text-xl font-semibold", project.featured && "lg:text-2xl")}>
+        <h3 className={cn("text-xl font-bold", project.featured && "lg:text-2xl")}>
           {project.name}
         </h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{project.description}</p>

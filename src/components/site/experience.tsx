@@ -28,7 +28,7 @@ export function Experience() {
                 </span>
                 <BlurFade inView delay={i * 0.08}>
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <h3 className="text-lg font-semibold">
+                    <h3 className="text-lg font-bold">
                       {job.role}
                       <span className="text-muted-foreground"> · {job.company}</span>
                     </h3>
@@ -58,7 +58,7 @@ export function Experience() {
                 </p>
                 {profile.education.map((item) => (
                   <div key={item.school} className="mt-4">
-                    <h3 className="text-base font-semibold">{item.degree}</h3>
+                    <h3 className="text-base font-bold">{item.degree}</h3>
                     <p className="mt-1 text-sm text-muted-foreground">{item.school}</p>
                     <p className="mt-1 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground">
                       {item.period}

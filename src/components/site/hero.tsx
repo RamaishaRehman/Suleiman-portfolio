@@ -55,11 +55,20 @@ export function Hero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="max-w-4xl text-5xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl"
+          className="max-w-4xl text-5xl font-black leading-[1.05] sm:text-6xl lg:text-7xl"
         >
           Hi, I&apos;m {profile.firstName}.
           <br />
-          <span className="text-primary">{profile.roleShort}</span>
+          <span className="text-primary">
+            {profile.roleShort.split("E-Commerce").map((part, i, arr) => (
+              <span key={i}>
+                {part}
+                {i < arr.length - 1 ? (
+                  <span className="whitespace-nowrap">E-Commerce</span>
+                ) : null}
+              </span>
+            ))}
+          </span>
         </motion.h1>
 
         <TextGenerateEffect
