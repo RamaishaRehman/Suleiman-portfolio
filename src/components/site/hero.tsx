@@ -59,7 +59,7 @@ export function Hero() {
         >
           Hi, I&apos;m {profile.firstName}.
           <br />
-          <span className="text-primary">{profile.role}</span>
+          <span className="text-primary">{profile.roleShort}</span>
         </motion.h1>
 
         <TextGenerateEffect

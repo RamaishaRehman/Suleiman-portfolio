@@ -1,10 +1,10 @@
 import {
-  Building2,
   Gauge,
+  Megaphone,
   Paintbrush,
-  Plug,
+  Search,
+  Share2,
   ShoppingBag,
-  Store,
   type LucideIcon,
 } from "lucide-react";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -13,11 +13,11 @@ import { profile } from "@/data/profile";
 
 const icons: Record<string, LucideIcon> = {
   ShoppingBag,
-  Building2,
   Paintbrush,
-  Store,
+  Search,
+  Megaphone,
   Gauge,
-  Plug,
+  Share2,
 };
 
 export function Services() {
@@ -27,7 +27,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Services"
           title="What I can build for you"
-          description="From a single landing page to a full WooCommerce store, every project is built to be fast, easy to manage and ready to grow."
+          description="From a WordPress site or Shopify store to the SEO and ad campaigns that bring it customers, I cover the full journey from build to growth."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {profile.services.map((service, i) => {

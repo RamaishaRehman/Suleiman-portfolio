@@ -5,23 +5,20 @@ import { SectionHeading } from "@/components/site/section-heading";
 import { profile } from "@/data/profile";
 
 const highlights = [
+  "Google and Semrush certified",
   "Responsive on every screen size",
-  "Optimised images and page speed",
-  "Clean admin that clients can update themselves",
   "SEO-ready structure and metadata",
+  "Built to convert, not just to look good",
 ];
 
 export function About() {
   return (
-    <section
-      id="about"
-      className="scroll-mt-24 border-t border-border bg-card/30 py-24 sm:py-32"
-    >
+    <section id="about" className="scroll-mt-24 py-24 sm:py-32">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
         <div>
           <SectionHeading
             eyebrow="About"
-            title="A developer who ships finished sites, not half-built themes."
+            title="Websites and stores with marketing built in from day one."
           />
           <BlurFade
             inView
@@ -49,15 +46,22 @@ export function About() {
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Toolkit
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {profile.skills.map((skill) => (
-                <Badge
-                  key={skill}
-                  variant="secondary"
-                  className="h-auto rounded-md px-2.5 py-1 text-xs font-medium"
-                >
-                  {skill}
-                </Badge>
+            <div className="mt-5 space-y-5">
+              {profile.skillGroups.map((group) => (
+                <div key={group.title}>
+                  <h3 className="text-sm font-semibold">{group.title}</h3>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {group.items.map((skill) => (
+                      <Badge
+                        key={skill}
+                        variant="secondary"
+                        className="h-auto rounded-md px-2.5 py-1 text-xs font-medium"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
             <dl className="mt-8 grid grid-cols-3 gap-4 border-t border-border pt-6">

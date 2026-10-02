@@ -3,6 +3,7 @@ import { Hero } from "@/components/site/hero";
 import { TechMarquee } from "@/components/site/tech-marquee";
 import { Projects } from "@/components/site/projects";
 import { Services } from "@/components/site/services";
+import { Experience } from "@/components/site/experience";
 import { About } from "@/components/site/about";
 import { Contact, Footer } from "@/components/site/contact";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <TechMarquee />
         <Projects />
         <Services />
+        <Experience />
         <About />
         <Contact />
       </main>

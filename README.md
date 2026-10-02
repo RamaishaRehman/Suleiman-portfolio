@@ -15,12 +15,12 @@ npm run start    # serve the production build
 
 | What | File |
 | --- | --- |
-| Name, role, tagline, email, socials, stats, skills, services, about text | `src/data/profile.ts` |
+| Name, role, tagline, contact details, socials, stats, skills, services, experience, education, certifications | `src/data/profile.ts` |
 | Project list (name, category, description, tags, screenshot, demo video, live URL) | `src/data/projects.ts` |
 | Screenshots and web-sized demo videos | `public/projects/` |
 | Colours, fonts, animation keyframes | `src/app/globals.css` |
 
-Every placeholder that still needs real data is marked with `TODO` in `src/data/profile.ts`.
+Social profile URLs (LinkedIn, Fiverr, Upwork) are left empty in `src/data/profile.ts`; the links appear automatically once filled in.
 
 ## Structure
 

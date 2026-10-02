@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle, Phone } from "lucide-react";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { buttonVariants } from "@/components/ui/button";
@@ -54,6 +54,18 @@ export function Contact() {
                   WhatsApp
                 </a>
               ) : null}
+              {profile.phone ? (
+                <a
+                  href={profile.phoneHref}
+                  className={cn(
+                    buttonVariants({ variant: "outline", size: "lg" }),
+                    "h-12 rounded-full px-7 text-sm font-semibold"
+                  )}
+                >
+                  <Phone className="size-4" />
+                  {profile.phone}
+                </a>
+              ) : null}
             </div>
             {socialLinks.length > 0 ? (
               <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
@@ -85,7 +97,9 @@ export function Footer() {
         <p>
           &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
         </p>
-        <p className="font-mono text-xs uppercase tracking-[0.18em]">{profile.role}</p>
+        <p className="text-center font-mono text-xs uppercase tracking-[0.18em] sm:text-right">
+          {profile.roleShort}
+        </p>
       </div>
     </footer>
   );
