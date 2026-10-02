@@ -73,11 +73,11 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
       </div>
 
       <div className={cn("flex flex-1 flex-col gap-3 p-5", project.featured && "lg:p-7")}>
-        <div className="flex items-center justify-between gap-3">
-          <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+          <span className="whitespace-nowrap font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
             {project.category}
           </span>
-          <span className="text-xs text-muted-foreground">{project.platform}</span>
+          <span className="whitespace-nowrap text-xs text-muted-foreground">{project.platform}</span>
         </div>
         <h3 className={cn("text-xl font-bold", project.featured && "lg:text-2xl")}>
           {project.name}

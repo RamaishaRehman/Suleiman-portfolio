@@ -41,18 +41,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "brands-hub",
-    name: "Brands Hub",
-    category: "E-commerce",
-    platform: "Shopify",
-    description:
-      "Bags and accessories store with a countdown sale bar, collection pages, variant bulk-order form, store locator and WhatsApp ordering.",
-    image: "/projects/brands-hub.png",
-    video: "/projects/brands-hub-demo.mp4",
-    tags: ["Shopify", "Collections", "Bulk order form", "WhatsApp"],
-    featured: true,
-  },
-  {
     slug: "kodawari",
     name: "Kodawari",
     category: "E-commerce",
@@ -62,6 +50,7 @@ export const projects: Project[] = [
     image: "/projects/kodawari.png",
     video: "/projects/kodawari-demo.mp4",
     tags: ["WooCommerce", "Custom theme", "Multi-currency", "Dark UI"],
+    featured: true,
   },
   {
     slug: "muskoo",

@@ -24,7 +24,7 @@ export function Projects() {
           <SectionHeading
             eyebrow="Selected work"
             title="Stores and sites I have shipped"
-            description="A mix of WooCommerce and Shopify storefronts, corporate sites and agency landing pages. Click any project to see it larger, or play the demo where there is one."
+            description="WooCommerce storefronts, corporate sites, agency landing pages and a movie studio site. Click any project to see it larger, or play the demo where there is one."
           />
           <div
             role="tablist"

@@ -20,7 +20,7 @@ export const profile = {
     upwork: "", // add profile URL when available
   },
   stats: [
-    { label: "Projects delivered", value: 10, suffix: "+" },
+    { label: "Projects delivered", value: 9, suffix: "+" },
     { label: "Years of experience", value: 3, suffix: "+" },
     { label: "Certifications", value: 9, suffix: "" },
   ],
