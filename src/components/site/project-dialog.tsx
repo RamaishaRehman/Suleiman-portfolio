@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -22,7 +23,16 @@ type ProjectDialogProps = {
 export function ProjectDialog({ project, onClose }: ProjectDialogProps) {
   return (
     <Dialog open={project !== null} onOpenChange={(open) => (!open ? onClose() : undefined)}>
-      <DialogContent className="max-h-[92svh] w-[calc(100%-2rem)] max-w-5xl overflow-y-auto p-0 sm:max-w-5xl">
+      <DialogContent
+        showCloseButton={false}
+        className="max-h-[92svh] w-[calc(100%-2rem)] max-w-5xl overflow-y-auto p-0 sm:max-w-5xl"
+      >
+        <DialogClose
+          aria-label="Close"
+          className="absolute right-3 top-3 z-10 inline-flex size-10 cursor-pointer items-center justify-center rounded-full bg-black/70 text-white shadow-lg backdrop-blur transition-colors duration-200 hover:bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <X className="size-5" />
+        </DialogClose>
         {project ? (
           <>
             <div className="relative aspect-video w-full overflow-hidden rounded-t-xl bg-black">
